@@ -1,8 +1,8 @@
 import React from 'react';
 import {Text} from 'react-native';
 
-const Test2Screen = () => {
+const MapScreen = () => {
   return <Text>test</Text>;
 };
 
-export default Test2Screen;
+export default MapScreen;

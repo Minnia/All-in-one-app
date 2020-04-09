@@ -1,8 +1,8 @@
 export const screens = {
   CAROUSEL: 'screens/carousel',
   VIEW: 'screens/view_screen',
-  TEST_SCREEN: 'screens/test_screen',
-  TEST_2_SCREEN: 'screens/test_2_screen',
+  TODO_LIST_SCREEN: 'screens/todo_list_screen',
+  MAP_SCREEN: 'screens/map_screen',
 };
 export const stacks = {
   CAROUSEL: 'HomeStack',

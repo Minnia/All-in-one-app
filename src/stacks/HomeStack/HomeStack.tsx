@@ -3,7 +3,7 @@ import React from 'react';
 import CarouselScreen from '../../screens/CarouselScreen';
 import {screens, stacks} from '../../navigation/navigationConstants';
 import ViewScreen from '../../screens/ViewScreen';
-import TestScreen from '../../screens/TestScreen';
+import TestScreen from '../../screens/TodoListScreen';
 import TestStack from '../TestStack';
 import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
 import {createStackNavigator} from '@react-navigation/stack';
