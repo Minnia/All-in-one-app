@@ -7,9 +7,9 @@ const Stack = createStackNavigator();
 
 const LoginStack = () => {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator screenOptions={{headerShown: false}}>
       <Stack.Screen
-        options={{title: 'Login'}}
+        options={{title: null}}
         name={screens.LOGIN_SCREEN}
         component={LoginScreen}
       />
