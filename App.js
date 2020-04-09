@@ -12,6 +12,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 
 import HomeStack from './src/stacks/HomeStack';
 import TestStack from './src/stacks/TestStack';
+import LoginStack from './src/stacks/LoginStack';
 
 const Stack = createStackNavigator();
 
@@ -31,6 +32,7 @@ const App = () => {
             component={HomeStack}
           />
           <Stack.Screen name="TestStack" component={TestStack} />
+          <Stack.Screen name="LoginStack" component={LoginStack} />
         </Stack.Navigator>
       </NavigationContainer>
     </>

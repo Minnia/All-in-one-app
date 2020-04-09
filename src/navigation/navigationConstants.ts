@@ -3,8 +3,10 @@ export const screens = {
   VIEW: 'screens/view_screen',
   TODO_LIST_SCREEN: 'screens/todo_list_screen',
   MAP_SCREEN: 'screens/map_screen',
+  LOGIN_SCREEN: 'screens/login_screen',
 };
 export const stacks = {
   CAROUSEL: 'HomeStack',
   TEST: 'TestStack',
+  LOGIN: 'LoginStack',
 };

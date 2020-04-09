@@ -9,6 +9,7 @@ import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs
 import {createStackNavigator} from '@react-navigation/stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import CarouselStack from '../CarouselStack';
+import LoginStack from '../LoginStack';
 const Stack = createStackNavigator();
 
 const Tab = createBottomTabNavigator();
@@ -25,6 +26,11 @@ export const HomeStack = () => {
         options={{title: 'Test'}}
         name={stacks.TEST}
         component={TestStack}
+      />
+      <Tab.Screen
+        options={{title: 'Login'}}
+        name={stacks.LOGIN}
+        component={LoginStack}
       />
     </Tab.Navigator>
   );
