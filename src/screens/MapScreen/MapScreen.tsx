@@ -1,8 +1,8 @@
 import React from 'react';
-import {Text} from 'react-native';
+import Maps from '../../components/Map';
 
 const MapScreen = () => {
-  return <Text>test</Text>;
+  return <Maps />;
 };
 
 export default MapScreen;
