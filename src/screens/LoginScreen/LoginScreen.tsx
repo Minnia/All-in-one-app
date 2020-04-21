@@ -1,10 +1,29 @@
 import React, {useState} from 'react';
-import {View, StyleSheet, Text} from 'react-native';
+import {View, StyleSheet, Text, Alert} from 'react-native';
 import {TextInput, TouchableOpacity} from 'react-native-gesture-handler';
 
+import auth from '@react-native-firebase/auth';
+import {useNavigation} from '@react-navigation/native';
+import {screens} from '../../navigation/navigationConstants';
+
 const LoginScreen = () => {
+  const navigation = useNavigation();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+
+  const login = async () => {
+    try {
+      const doLogin = await auth().signInWithEmailAndPassword(email, password);
+      if (doLogin.user) {
+        navigation.navigate(screens.CAROUSEL);
+      }
+      if (email === '' || password === '') {
+        Alert.alert('Enter details to sign in!');
+      }
+    } catch (error) {
+      Alert.alert(error.message);
+    }
+  };
   return (
     <View style={styles.container}>
       <Text style={styles.title}>All in one</Text>
@@ -25,10 +44,11 @@ const LoginScreen = () => {
           onChangeText={text => setPassword(text)}
         />
       </View>
-      <TouchableOpacity style={styles.login}>
+      <TouchableOpacity style={styles.login} onPress={login}>
         <Text style={styles.loginText}>Login</Text>
       </TouchableOpacity>
-      <TouchableOpacity>
+      <TouchableOpacity
+        onPress={() => navigation.navigate(screens.SIGN_UP_SCREEN)}>
         <Text style={styles.forgot}>Signup</Text>
       </TouchableOpacity>
       <TouchableOpacity>

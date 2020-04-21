@@ -10,6 +10,11 @@ def add_flipper_pods!
   pod 'FlipperKit/FlipperKitReactPlugin', version, :configuration => 'Debug'
 end
 
+# add the Firebase pod for Google Analytics
+pod 'Firebase/Analytics'
+# add pods for any other desired Firebase products
+# https://firebase.google.com/docs/ios/setup#available-pods
+
 # Post Install processing for Flipper
 def flipper_post_install(installer)
   installer.pods_project.targets.each do |target|

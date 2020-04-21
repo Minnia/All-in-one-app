@@ -10,7 +10,6 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import CarouselStack from '../CarouselStack';
 import LoginStack from '../LoginStack';
-const Stack = createStackNavigator();
 
 const Tab = createBottomTabNavigator();
 

@@ -16,7 +16,7 @@ import {screens} from '../../navigation/navigationConstants';
 import {NavigationContainer} from '@react-navigation/native';
 export const CarouselRide = () => {
   const navigation = useNavigation();
-  console.log('navigation', navigation);
+
   const test = ({item}) => {
     return (
       <View
