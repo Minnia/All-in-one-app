@@ -1,0 +1,14 @@
+{
+  "primary": {
+    "color": "#fff",
+    "onColor": "#fff"
+  },
+  "secondary": {
+    "color": "#ffffff",
+    "onColor": "#dbdbdb"
+  },
+  "error": "#ed4337",
+  "success": "#53a653",
+  "border_color": "#ffffff",
+  "shadowColor": "#dbdbdb"
+}

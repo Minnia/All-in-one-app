@@ -17,7 +17,7 @@ const LoginStack = () => {
       <Stack.Screen
         options={{
           title: null,
-          headerShown: null,
+          headerShown: false,
           headerBackTitleVisible: false,
         }}
         name={screens.SIGN_UP_SCREEN}

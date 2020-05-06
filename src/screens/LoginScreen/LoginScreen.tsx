@@ -3,8 +3,9 @@ import {View, StyleSheet, Text, Alert} from 'react-native';
 import {TextInput, TouchableOpacity} from 'react-native-gesture-handler';
 
 import auth from '@react-native-firebase/auth';
+
 import {useNavigation} from '@react-navigation/native';
-import {screens} from '../../navigation/navigationConstants';
+import {screens, stacks} from '../../navigation/navigationConstants';
 
 const LoginScreen = () => {
   const navigation = useNavigation();
@@ -15,7 +16,7 @@ const LoginScreen = () => {
     try {
       const doLogin = await auth().signInWithEmailAndPassword(email, password);
       if (doLogin.user) {
-        navigation.navigate(screens.CAROUSEL);
+        navigation.navigate(stacks.CAROUSEL);
       }
       if (email === '' || password === '') {
         Alert.alert('Enter details to sign in!');

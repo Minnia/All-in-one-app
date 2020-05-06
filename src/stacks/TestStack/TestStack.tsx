@@ -3,6 +3,7 @@ import {screens} from '../../navigation/navigationConstants';
 import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
 import TodoListScreen from '../../screens/TodoListScreen';
 import MapScreen from '../../screens/MapScreen';
+import WeatherScreen from '../../screens/WeatherScreen';
 
 const Tab = createMaterialTopTabNavigator();
 export const TestStack = () => {
@@ -17,6 +18,11 @@ export const TestStack = () => {
         name={screens.MAP_SCREEN}
         options={{title: 'Map'}}
         component={MapScreen}
+      />
+      <Tab.Screen
+        name={screens.WEATHER_SCREEN}
+        options={{title: 'Weather'}}
+        component={WeatherScreen}
       />
     </Tab.Navigator>
   );

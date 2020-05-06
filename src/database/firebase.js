@@ -12,8 +12,11 @@ var firebaseConfig = {
   appId: Config.FIREBASE_APP_ID,
   measurementId: Config.FIREBASE_MEASUREMENT_ID,
 };
+
+const settings = {timestampsInSnapshots: true};
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+firebase.firestore().settings(settings);
 // firebase.analytics();
 
 export default firebaseConfig;
