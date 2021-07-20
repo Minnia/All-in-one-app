@@ -27,7 +27,7 @@
     "firebase": "^7.14.2",
     "firebase-functions-helper": "^0.7.5",
     "react": "^16.13.1",
-    "react-native": "0.62.0",
+    "react-native": "0.62.3",
     "react-native-check-box": "^2.1.7",
     "react-native-cli": "^2.0.1",
     "react-native-config": "^1.0.0",
